@@ -1,0 +1,55 @@
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.menu,
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+/* Hide all submenus by default */
+.submenu {
+  display: none; /* Hide submenus completely */
+  position: absolute;
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  top: 100%; /* First-level submenus appear below */
+  left: 0; /* Align horizontally with parent */
+}
+
+/* For second-level submenus (and deeper), position to the right */
+.menu-item .submenu .submenu {
+  top: 0;
+  left: 100%; /* Position to the right of the parent submenu */
+}
+
+/* Show submenus on hover */
+.menu-item:hover > .submenu {
+  display: block; /* Show submenu */
+}
+
+/* Optional: Add hover effect for better UX */
+.menu-item:hover > a {
+  background-color: #555;
+}

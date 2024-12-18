@@ -1,0 +1,13 @@
+[
+    { "id": 1, "label": "Home", "url": "/", "parent": null },
+    { "id": 2, "label": "Signup", "url": "/Signup", "parent": null },
+    { "id": 3, "label": "Services", "url": "/Services", "parent": null },
+    { "id": 4, "label": "Marketing", "url": "/services/marketing", "parent": 3 },
+    { "id": 5, "label": "Diggers", "url": "/services/diggers/diggers", "parent": 3 },
+    { "id": 6, "label": "Design", "url": "/services/diggers/development/Design", "parent": 9 },
+    { "id": 7, "label": "Contact", "url": "/Contactus", "parent": null },
+    { "id": 8, "label": "Consulting", "url": "/services/consulting", "parent": 3 },
+    { "id": 9, "label": "Development", "url": "/Development", "parent": 5 },
+    { "id": 10, "label": "Products", "url": "/services/diggers/products", "parent": 5 }
+  ]
+  
